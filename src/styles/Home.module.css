@@ -1,0 +1,205 @@
+
+.header {
+  display: flex;
+  height: 80vh;
+  background-color: var(--bg-300);
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(165deg,#f5d5a7, #8ea6c3 30%,  #33506e 70%);
+}
+
+
+.macbook {
+  width: 1050px;
+  height: 550px;
+}
+
+.macbook>.head {
+  width: 890px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--text-100);
+  border-radius: 20px 20px 0 0;
+  margin: 0 auto;
+  border: 5px solid var(--accent-200);
+  border-bottom: 1px solid var(--accent-100);
+}
+
+.macbook>.head>.camera {
+  width: 7px;
+  height: 7px;
+  background-color: var(--accent-200);
+  border-radius: 10px;
+  margin: 7px;
+}
+
+.macbook>.head>.screen {
+  width: 840px;
+  height: 480px;
+  border-radius: 10px;
+  background: linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+  display: grid;
+  padding-top: 5px;
+  grid-template-rows: 80px 80px 150px 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.macbook>.head>.screen>span {
+  font-size:50px;
+  margin-bottom: 10px;
+}
+
+.macbook>.head>.screen>.searcher {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.macbook>.head>.screen>.searcher>img {
+  width: 80px;
+  cursor: pointer;
+  border-right: 1px solid var(--bg-100);
+}
+
+.macbook>.head>.screen>.searcher>input {
+  height: 30px;
+  width: calc(100% - 80px);
+  border: 0;
+  border-radius: 0 20px 20px 0;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+.macbook>.head>.screen>.blackScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  animation: powerUp 2s forwards;
+  
+}
+
+.macbook>.head>.screen>img {
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.macbook>.head>.screen>.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60px;
+  width: 830px;
+  border-radius: 10px;
+  background-color: var(--accent-200);
+}
+
+.macbook>.head>.screen>.items>.btn {
+  width: 70px;
+  height: 50px;
+  background:  linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+  border-radius: 10px;
+  
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.macbook>.head>span {
+  color: var(--accent-100);
+}
+
+.macbook>.body {
+  width: 100%;
+  height: 25px;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--accent-200);
+  display: flex;
+  justify-content: center;
+}
+
+.macbook>.body>.openner {
+  width: 145px;
+  height: 8px;
+  background-color: var(--accent-100);
+  border-radius: 0 0 10px 10px;
+}
+
+.table {
+  height: calc(20vh - 50px);
+  background-color: blanchedalmond;
+}
+
+@keyframes powerUp {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (max-height: 800px) {
+  .header {
+    height: 500px;
+    padding-top: 140px;
+  }
+
+  .table {
+    display: none;
+  }
+}
+
+.floatingBox1 {
+  width:fit-content;
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 155px;
+  background:  linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  color: white; 
+}
+
+.floatingBox2 {
+  width:fit-content;
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 380px;
+  background:  linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  color: white;
+}
+
+.floatingBox3 {
+  width:fit-content;
+  position: absolute;
+  margin-top: 230px;
+  margin-left: 605px;
+  background:  linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px;
+  color: white;
+}

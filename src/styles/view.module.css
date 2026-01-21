@@ -1,0 +1,230 @@
+.nav {
+    padding: 10px 2rem;
+    height: 60px;
+    background: linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e2e2e2;
+}
+
+.nav>#SearchBox {
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60%;
+}
+
+.nav>#SearchBox>#SearchIcon {
+    border-radius: 20px 0 0 20px;
+    width: 40px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    cursor: text;
+}
+
+.nav>#SearchBox>input {
+    border-radius: 0 20px 20px 0;
+    width: 80%;
+    padding: 10px;
+    border: 0;
+}
+
+.nav>#SearchBox>input:focus {
+    outline: none;
+    border: 1px solid white;
+    border-left: 0;
+}
+
+.nav>#SearchBox>input:focus+#SearchIcon {
+    border: 1px solid;
+    border-right: white;
+}
+
+.container {
+    align-items: column;
+    max-width: 3000px;
+    height: 100vh;
+    font-size: x-large;
+    display: flex;
+    background: linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+}
+
+.container>.player {
+    margin: auto;
+    height: 100%;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cdback {
+    background: linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+    border: black 3px;
+    padding: 10px;
+    width: 200px;
+    margin-left: 0;
+    border-style: groove;
+    box-shadow: 0 0 18px;
+    position: relative;
+}
+
+.cd {
+    border: solid;
+    width: 200px;
+    /* border-radius: 50%; */
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px;
+}
+
+.hole {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+    border-radius: 50%;
+    border: 5px solid;
+}
+
+.process {
+    width: 350px;
+}
+
+.process>.time {
+    text-align: left;
+}
+
+.process>.bar {
+    margin: 0 auto;
+    height: 10px;
+    background-color: gray;
+}
+
+.btns {
+    width: fit-content;
+    height: 150px;
+    margin: 0 auto;
+    padding: auto;
+    color: black;
+    display: flex;
+}
+
+.previous {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 43.5px solid black;
+    transform: rotate(-90deg);
+}
+
+.download {
+    background-color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 15px;
+    height: 43px;
+}
+
+.next {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 43.5px solid black;
+    transform: rotate(90deg);
+}
+
+.info {
+
+    width: 700px;
+    /*height: calc(100vh - 80px);*/
+    height: 550px;
+    margin-right: 70px;
+    display: grid;
+    padding: 15px 0;
+    grid-template-rows: 190px 30px 1fr;
+    font-size: x-large;
+    flex-direction: column;
+}
+
+
+
+.divider {
+    position: absolute;
+    text-align: left;
+    border-left: 3px solid;
+    padding: 0 50px;
+
+}
+
+.song {
+    position: relative;
+}
+
+.translyrics {
+    margin-top: 0;
+    justify-content: right;
+    display: flex;
+    font-size: large;
+
+
+}
+
+.ai {
+    border: solid black 3px;
+    border-radius: 5px;
+    width: 100px;
+    font-size: x-large;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.floatingBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+.lyrics {
+    position: relative;
+    border: black solid 5px;
+    background: linear-gradient(165deg, #33506e 15%, #8ea6c3 70%, #f5d5a7);
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 30px;
+    word-break: keep-all;
+    overflow-y: auto;
+    text-align: left;
+    font-size: large;
+    height: 350px;
+}
+
+.lyrics>p::selection {
+    color: var(--color);
+    text-shadow: var(--color2) 2px 2px 5px;
+    cursor: pointer;
+}
